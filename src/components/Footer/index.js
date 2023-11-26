@@ -1,18 +1,17 @@
-"use client";
-import React from "react";
-import { useForm } from "react-hook-form";
-import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from "../Icons";
-import Link from "next/link";
-import siteMetadata from "@/src/utils/siteMetaData";
+'use client'
+import siteMetadata from '@/src/utils/siteMetaData'
+import Link from 'next/link'
+import { useForm } from 'react-hook-form'
+import { DribbbleIcon, GithubIcon, LinkedinIcon, TwitterIcon } from '../Icons'
 
 const Footer = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
-  console.log(errors);
+  } = useForm()
+  const onSubmit = (data) => console.log(data)
+  console.log(errors)
 
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
@@ -31,7 +30,7 @@ const Footer = () => {
         <input
           type="email"
           placeholder="Enter your email"
-          {...register("email", { required: true, maxLength: 80 })}
+          {...register('email', { required: true, maxLength: 80 })}
           className="w-full bg-transparent pl-2 sm:pl-0 text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1"
         />
 
@@ -86,14 +85,26 @@ const Footer = () => {
           sitemap.xml
         </Link>
         <div className="text-center">
-          Made with &hearts; by{" "}
-          <a href="https://devdreaming.com" className="underline" target="_blank">
+          Made with &hearts; by{' '}
+          <a
+            href="https://devdreaming.com"
+            className="underline"
+            target="_blank"
+          >
             CodeBucks
+          </a>
+          <span> | </span>
+          <a
+            href="https://github.com/iuritorres"
+            className="underline"
+            target="_blank"
+          >
+            Iuri Torres
           </a>
         </div>
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer
