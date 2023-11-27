@@ -77,10 +77,10 @@ const Header = () => {
           Home
         </Link>
         <Link href="/about" className="mx-2">
-          About
+          Sobre
         </Link>
         <Link href="/contact" className="mx-2">
-          Contact
+          Contato
         </Link>
         <button
           onClick={() => setMode(mode === 'light' ? 'dark' : 'light')}

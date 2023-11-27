@@ -16,11 +16,12 @@ const Footer = () => {
   return (
     <footer className="mt-16 rounded-2xl bg-dark dark:bg-accentDark/90 m-2 sm:m-10 flex flex-col items-center text-light dark:text-dark">
       <h3 className="mt-16 font-medium dark:font-bold text-center capitalize text-2xl sm:text-3xl lg:text-4xl px-4">
-        Interesting Stories | Updates | Guides
+        Histórias interessantes | Atualizações | Guias
       </h3>
       <p className="mt-5 px-4 text-center w-full sm:w-3/5 font-light dark:font-medium text-sm sm:text-base">
-        Subscribe to learn about new technology and updates. Join over 5000+
-        members community to stay up to date with latest news.
+        Inscreva-se para saber mais sobre novas tecnologias e atualizações.
+        Junte-se à comunidade de mais de 5.000 membros para se manter atualizado
+        com as últimas notícias.
       </p>
 
       <form
@@ -29,13 +30,14 @@ const Footer = () => {
       >
         <input
           type="email"
-          placeholder="Enter your email"
+          placeholder="Digite seu email"
           {...register('email', { required: true, maxLength: 80 })}
           className="w-full bg-transparent pl-2 sm:pl-0 text-dark focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1"
         />
 
         <input
           type="submit"
+          value="Enviar"
           className="bg-dark text-light dark:text-dark dark:bg-light cursor-pointer font-medium rounded px-3 sm:px-5 py-1"
         />
       </form>

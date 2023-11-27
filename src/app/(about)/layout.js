@@ -1,15 +1,10 @@
-import InsightRoll from "@/src/components/About/InsightRoll";
-
+import InsightRoll from '@/src/components/About/InsightRoll'
 
 const insights = [
-    "20+ Projects Completed",
-    "3+ Years of Freelancing",
-    "99% Client Satisfaction",
-    "20K+ Subscribers",
-    "Authored In-Depth Course on Educative",
-    "Contributed as a Technical Course Reviewer 📝",
-    "Recipient of the Hackernoon Noonies Award 🏆",
-  ];
+  '20+ Projetos concluídos',
+  '3+ Anos de Freelancer',
+  '99% Satisfação do Cliente',
+]
 
 export default function AboutLayout({ children }) {
   return (
@@ -17,5 +12,5 @@ export default function AboutLayout({ children }) {
       <InsightRoll insights={insights} />
       {children}
     </main>
-  );
+  )
 }

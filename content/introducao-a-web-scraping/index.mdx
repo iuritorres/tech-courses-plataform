@@ -1,0 +1,50 @@
+---
+title: 'Introdução a Web Scraping'
+description: Como coletar dados de websites.
+image: '../../public/blogs/emile-perron-xrVDYZRGdw4-unsplash.jpg'
+publishedAt: '2023-11-26'
+updatedAt: '2023-11-26'
+author: 'Iuri Torres'
+isPublished: true
+tags:
+  - python
+  - rpa
+  - tech
+---
+
+# Introdução a Web Scraping
+
+tags: python, rpa, tech
+slug: introducao-a-web-scraping
+
+# Fala Dev,
+
+Nesse curso você vai entender na prática, como é trabalhar com Automação de Processos e pipipi popopo…
+
+exemplo de Robot Process Automation com Python:
+
+```python
+def __request_html(page_url: str) -> Firefox:
+    options = FirefoxOptions()
+    options.add_argument('--headless')
+    options.add_argument('--private')
+
+    browser = Firefox(options=options)
+    browser.get(page_url)
+
+    # Roll to the end (load all elements)
+    browser.find_element(By.TAG_NAME, 'html').send_keys(Keys.END)
+    sleep(5)
+
+    return browser
+```
+
+<Image
+  src="/blogs/c-d-x-PDX_a_82obo-unsplash.jpg"
+  width="718"
+  height="404"
+  alt="Image"
+  sizes="100vw"
+/>
+
+Cabou! :D
