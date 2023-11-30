@@ -1,13 +1,13 @@
 // please update required information
 const siteMetadata = {
-  title: 'Next.js Blog With Tailwind CSS and Contentlayer',
+  title: 'RotaTech | Home',
   author: 'CodeBucks | Iuri Torres',
-  headerTitle: 'Next.js Blog',
-  description: 'A blog created with Next.js, Tailwind.css and contentlayer.',
+  headerTitle: 'RotaTech',
+  description: 'Plataforma de cursos introdutórios de programação da RotaTech.',
   language: 'pt-br',
   theme: 'system', // system, dark or light
   siteUrl: 'https://tech-courses-plataform.vercel.app/', // your website URL
-  siteLogo: '/logo.png',
+  siteLogo: '/logo-svg.svg',
   socialBanner: '/social-banner.png', // add social banner in the public folder
   email: 'iuri.t1000@gmail.com',
   github: 'https://github.com/iuritorres',
